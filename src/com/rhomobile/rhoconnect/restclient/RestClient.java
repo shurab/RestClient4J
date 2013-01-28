@@ -33,8 +33,8 @@ public class RestClient implements RestCall {
     }
     
     @Override
-    public RestResponse delete() {
-        return call(REQUEST_TYPE.DELETE, null, null);
+    public RestResponse delete(Map<String, String> params) {
+        return call(REQUEST_TYPE.DELETE, null, params);
     }
 
     @Override

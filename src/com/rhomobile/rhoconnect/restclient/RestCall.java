@@ -18,6 +18,6 @@ public interface RestCall {
     RestResponse post(String content, Map<String, String> params);
     RestResponse put(InputStream content, Map<String, String> params);
     RestResponse put(String content, Map<String, String> params);
-    RestResponse delete();
+    RestResponse delete(Map<String, String> params);
     
 }

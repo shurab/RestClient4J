@@ -27,10 +27,10 @@ public class RestClient4J {
         RestClient rc = new RestClient(url);
         return rc.put(content, params);
     }
-    
-    public static RestResponse delete(String url) throws MalformedURLException {
+
+    public static RestResponse delete(String url, Map<String, String> params) throws MalformedURLException {
         RestClient rc = new RestClient(url);
-        return rc.delete();
-    }
-    
+        return rc.delete(params);
+	}
+
 }

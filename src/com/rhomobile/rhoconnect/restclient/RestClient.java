@@ -67,7 +67,7 @@ public class RestClient implements RestCall {
             
             connection.setInstanceFollowRedirects(false); 
             connection.setRequestMethod(requestType.toString());
-            System.out.println("Request Method is: " + connection.getRequestMethod());
+//            System.out.println("Request Method is: " + connection.getRequestMethod());
             
             for (Object param:params.entrySet()) {
                 entry = (Map.Entry<String, String>) param;

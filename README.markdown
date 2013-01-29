@@ -31,3 +31,6 @@ A post call would look like the following:
     client.post(content, params);
     
 where content is an InputStream object. This allows you to send binary content, name-value pairs, etc.
+
+Library includes JUnit test file to demostrate capabilties of RestClient for RhoConnect application (http://edgedocs.rhomobile.com/rhoconnect/rest-api). 
+The test file has dependencies on the Simple JSON parser http://code.google.com/p/json-simple/
